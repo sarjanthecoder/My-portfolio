@@ -1,0 +1,26 @@
+ header {
+      position: sticky;
+      top: 0;
+      background: #000;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      background-color: #111;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: yellow;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a.active,
+    nav a:hover {
+      border-bottom: 2px solid yellow;
+    }

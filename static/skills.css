@@ -1,0 +1,12 @@
+    #skills {
+      background: #1a1a1a;
+    }
+
+    #skills img {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 255, 0, 0.3);
+    }

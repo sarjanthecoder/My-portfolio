@@ -1,0 +1,290 @@
+<!-- ===============================  index.html  =============================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarjan | Full‑Stack Developer</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+<!-- Boxicons CSS -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+
+  <!-- Local stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="nav-container">
+    <h1 class="logo">Sarjan</h1>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- burger for mobile -->
+    <button id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero section" id="home">
+  <div class="hero-wrapper">
+    <div class="hero-left">
+      <small class="hero-greet">HELLO!</small>
+      <h1 class="hero-title">
+        I’m <span class="rgb-text">Sarjan</span><br>
+        a <span class="highlight">web developer</span>
+      </h1>
+
+      <div class="hero-btns">
+        <a href="#contact"  class="btn-primary">Hire Me</a>
+        <a href="#projects" class="btn-outline">My Works</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <img src="demo.jpg" alt="Sarjan portrait">
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about section" id="about">
+  <div class="container about-wrapper">
+    <div class="about-img"><img src="demo.jpg" alt="Sarjan avatar"></div>
+
+    <div class="about-content">
+      <small class="section-sub">Who Am I ?</small>
+      <h2 class="section-title">About Me</h2>
+
+      <h3 class="typing-line">
+        I’m <strong>Sarjan —</strong> <span id="typed-role"></span><span class="cursor">|</span>
+      </h3>
+
+      <p>
+        I turn complex requirements into elegant, high‑performance code. Over the last
+        <strong>4 years</strong> I’ve shipped SaaS dashboards, AI‑powered chatbots,
+        and cloud‑native APIs used by thousands of end‑users.
+      </p>
+      <p>
+        My stack blends <strong>Java (Spring Boot)</strong>, <strong>Python</strong>,
+        and modern <strong>JavaScript frameworks</strong> (Vue / React). I deploy to AWS,
+        Firebase, and Supabase using Docker &amp; GitHub Actions.
+      </p>
+      <p>
+        Outside of coding I mentor junior devs, speak at system‑design meet‑ups,
+        and experiment with the latest LLM APIs to build smarter products.
+      </p>
+
+      <a href="Sarjan_CV.pdf" class="btn-outline" download>
+        <i class="fa-solid fa-file-arrow-down"></i>&nbsp;Download CV
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="section" id="skills">
+  <div class="container">
+    <small class="section-sub">What I Do ?</small>
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+      <!-- Repeat skill cards -->
+      <!-- HTML & CSS -->
+      <div class="skill-card">
+        <img src="html.jpg" alt="HTML">
+        <h3>HTML &amp; CSS</h3>
+        <p>Responsive layouts.</p>
+        <div class="tech-badges"><span>Bootstrap</span><span>Tailwind</span><span>SASS</span></div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="skill-card">
+        <img src="js.jpg" alt="JavaScript">
+        <h3>JavaScript</h3>
+        <p>Interactive UIs.</p>
+        <div class="tech-badges"><span>React</span><span>Vue.js</span><span>Node.js</span></div>
+      </div>
+
+      <!-- Python -->
+      <div class="skill-card">
+        <img src="python.jpg" alt="Python">
+        <h3>Python</h3>
+        <p>Automation &amp; ML.</p>
+        <div class="tech-badges"><span>Flask</span><span>Django</span><span>Pandas</span></div>
+      </div>
+
+      <!-- Java -->
+      <div class="skill-card">
+        <img src="javaf.jpg" alt="Java">
+        <h3>Java</h3>
+        <p>Back‑end APIs.</p>
+        <div class="tech-badges"><span>Spring Boot</span><span>Hibernate</span><span>JPA</span></div>
+      </div>
+
+      <!-- Database -->
+      <div class="skill-card">
+        <img src="mysql.jpg" alt="DB">
+        <h3>MySQL / MongoDB</h3>
+        <p>Data modelling.</p>
+        <div class="tech-badges"><span>MongoDB Atlas</span><span>Firebase DB</span><span>Supabase</span></div>
+      </div>
+
+      <!-- Cloud -->
+      <div class="skill-card">
+        <img src="firebase.jpg" alt="Cloud">
+        <h3>Firebase / AWS</h3>
+        <p>Serverless deploys.</p>
+        <div class="tech-badges"><span>Lambda</span><span>EC2</span><span>Cloud Functions</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section" id="projects">
+  <div class="container">
+    <small class="section-sub">Some Work</small>
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="e learning.jpg" alt="E‑Learning Chatbot">
+        <h3>E‑Learning Chatbot</h3>
+        <span class="tech">NLP · Python</span>
+        <p class="proj-desc">An AI assistant that answers course questions and guides students through interactive lessons.</p>
+        <a href="#" class="project-btn" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="receipe generator.jpg" alt="Recipe Generator">
+        <h3>Recipe Generator</h3>
+        <span class="tech">VueJS · Serverless</span>
+        <p class="proj-desc">Generates personalised recipes from pantry ingredients using a GPT‑powered backend.</p>
+        <a href="#" class="project-btn" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="ai document.jpg" alt="AI Document Builder">
+        <h3>AI Document Builder</h3>
+        <span class="tech">Java · Spring Boot</span>
+        <p class="proj-desc">Creates dynamic PDF contracts from user input and e‑mails them via AWS SES.</p>
+        <a href="#" class="project-btn" target="_blank">View Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CERTIFICATES ===== -->
+<section class="section" id="certificates">
+  <div class="container">
+    <small class="section-sub">Proof of Expertise</small>
+    <h2 class="section-title">Certifications</h2>
+
+    <div class="cert-grid">
+      <div class="cert-card">
+        <img src="oracle.jpg" alt="Oracle AI Agent">
+        <h3>Oracle AI Agent Studio – Foundations Associate</h3>
+        <p class="cert-desc">Recognized by Oracle for practical expertise in AI agents, prompt engineering, and workflow orchestration within enterprise‑grade environments.</p>
+      </div>
+
+      <div class="cert-card">
+        <img src="bangalore.jpg" alt="Hackathon Certificate">
+        <h3>National Hackathon – E‑Commerce Platform</h3>
+        <p class="cert-desc">Built a scalable e‑commerce system (24‑hour hackathon) with real‑time cart logic and filtering.</p>
+      </div>
+
+      <div class="cert-card">
+        <img src="kongu.jpg" alt="Chatbot Hackathon">
+        <h3>Chatbot Hackathon – Kongu Engineering College</h3>
+        <p class="cert-desc">Developed a Gen‑AI chatbot deployed on EC2 &amp; Firebase, trained on local data.</p>
+      </div>
+
+      <div class="cert-card">
+        <img src="kongu1.jpg" alt="GenAI Workshop">
+        <h3>Generative AI Workshop</h3>
+        <p class="cert-desc">Hands‑on workshop covering LLMs, embeddings, vector DBs, and serverless deployment pipelines.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for certificate preview -->
+  <div id="cert-modal">
+    <span id="cert-close">&times;</span>
+    <button id="cert-prev" class="cert-nav">&lt;</button>
+    <img id="cert-modal-img" src="" alt="Certificate preview">
+    <button id="cert-next" class="cert-nav">&gt;</button>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact section" id="contact">
+  <div class="container contact-heading">
+    <small class="section-sub">Get in Touch</small>
+    <h2 class="section-title">Contact</h2>
+  </div>
+
+  <div class="contact-wrapper">
+    <div class="contact-img"><img src="demo.jpg" alt="Sarjan portrait"></div>
+
+    <form id="contact-form" class="contact-form" autocomplete="off"
+          action="https://api.web3forms.com/submit" method="POST">
+      
+      <input type="hidden" name="access_key" value="ecd92967-d33f-48ad-9c4b-81bb38e3b238"> <!-- Replace this -->
+      <input type="hidden" name="subject" value="New Contact Form Submission">
+     
+
+      <input type="text"  name="user_name"  placeholder="Your Name" required>
+      <input type="email" name="user_email" placeholder="Your Email" required>
+      <input type="text"  name="subject"    placeholder="Subject" required>
+      <textarea rows="6"  name="message"    placeholder="Message" required></textarea>
+
+      <button type="submit" class="btn-send">Send Message</button>
+      <p id="form-status" class="form-status"></p>
+    </form>
+  </div>
+</section>
+
+
+
+</body>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+   <center>
+    <p>© <span id="year"></span> Sarjan • All rights reserved</p>
+   </center>  <br>
+
+    <!-- social icons -->
+    <div class="social-links">
+      <a href="https://github.com/sarjanthecoder" target="_blank" aria-label="GitHub">
+        <i class='bx bxl-github'></i>
+      </a>
+      <a href="https://www.instagram.com/lonely_boy_official_2k" target="_blank" aria-label="Instagram">
+        <i class='bx bxl-instagram'></i>
+      </a>
+      <a href="https://www.linkedin.com/in/sarjan-p-7a97862a0" target="_blank" aria-label="LinkedIn">
+        <i class='bx bxl-linkedin'></i>
+      </a>
+      <a href="#" target="_blank" aria-label="Twitter">
+        <i class='bx bxl-twitter'></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+</html>
